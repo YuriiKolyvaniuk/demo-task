@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class TaskController {
     private final GitHubUseCase gitHubUseCase;
-
     @GetMapping(value = "/repositories/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public GitHubResponse getGitHubRepositories(@PathVariable String username) {
         return gitHubUseCase.getGitHubUserMetadata(username);
