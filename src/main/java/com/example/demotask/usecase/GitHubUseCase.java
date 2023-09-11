@@ -1,14 +1,11 @@
-package com.example.demotask.service;
+package com.example.demotask.usecase;
 
 import com.example.demotask.dto.GitHubResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

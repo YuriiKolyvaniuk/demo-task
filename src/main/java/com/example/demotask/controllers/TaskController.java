@@ -1,7 +1,7 @@
 package com.example.demotask.controllers;
 
 import com.example.demotask.dto.GitHubResponse;
-import com.example.demotask.service.GitHubUseCase;
+import com.example.demotask.usecase.GitHubUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
