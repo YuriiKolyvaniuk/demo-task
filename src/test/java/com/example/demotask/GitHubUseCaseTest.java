@@ -24,7 +24,7 @@ public class GitHubUseCaseTest {
 
     @Test
     public void testGetGitHubUserMetadata() {
-        String username = "username";
+        String username = "YuriiKolyvaniuk";
         String apiUrl = String.format(GITHUB_API_URL, username);
         GitHubResponse.GitHubRepository[] repositories = new GitHubResponse.GitHubRepository[0];
         ResponseEntity<GitHubResponse.GitHubRepository[]> responseEntity = new ResponseEntity<>(repositories, HttpStatus.OK);
@@ -39,7 +39,7 @@ public class GitHubUseCaseTest {
 
     @Test
     public void testGetGitHubUserMetadataWhenHttpClientErrorExceptionThrown() {
-        String username = "username";
+        String username = "YuriiKolyvaniuk";
         String apiUrl = String.format(GITHUB_API_URL, username);
         HttpClientErrorException exception = new HttpClientErrorException(HttpStatus.NOT_FOUND);
 

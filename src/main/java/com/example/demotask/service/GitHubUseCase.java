@@ -29,6 +29,6 @@ public class GitHubUseCase {
             repo.setBranches(Arrays.asList(branches));
         }
 
-        return (new GitHubResponse(List.of(repositories)));
+        return (new GitHubResponse(Arrays.asList(repositories)));
     }
 }
